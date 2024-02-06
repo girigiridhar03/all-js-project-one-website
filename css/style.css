@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    width: 35%;
+    margin: auto;
+    margin-top: .4rem;
+}
+
+nav h1{
+    text-align: center;
+ background-color: yellow;
+ padding: 1rem;
+ border-radius: 10px;
+}
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+   
+   
+}
+.container-one{
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-one .text{
+     text-align: center;
+     width: 35%;
+     margin-left: 8rem;
+
+}
+.container-two .text{
+     text-align: center;
+     width: 35%;
+     margin-right: 8rem;
+
+}
+.text h2{
+    font-size: 2.5rem;
+}
+.text p{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.container-one .img{
+  
+  width: 40%;
+}
+
+.img img{
+    width: 450px;
+}
+
+.container-two{
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .container-one .text{
+        text-align: center;
+        width: 35%;
+        margin-left: 2rem;
+       
+   }
+   .container-two .text{
+    text-align: center;
+    width: 35%;
+    margin-right: 2rem;
+   
+}
+    
+    .container-one .img{
+  
+        width: 45%;
+      }
+    .container-two .img{
+  
+        width: 45%;
+      }
+      .img img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:940px){
+    .container-one .img{
+        width: 48%;
+      }
+    .container-two .img{
+        width: 48%;
+      }
+      .img img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:888px){
+    .container-one .text{
+        text-align: center;
+        width: 40%;
+        margin-left: 2rem;
+       
+   }
+    .container-two .text{
+        text-align: center;
+        width: 40%;
+        margin-left: 2rem;
+       
+   }
+    
+    .container-one .img{
+        width: 50%;
+      }
+    .container-two .img{
+        width: 50%;
+      }
+      .img img{
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:768px){
+    nav{
+        width: 52%;
+        margin: auto;
+        margin-top: .4rem;
+    }
+    
+    .container-one{
+         flex-direction: column;
+         margin-top: 2.5rem;
+    }
+    .container-two{
+         flex-direction: column-reverse;
+         margin-top: 2.5rem;
+    }
+    .container-one .text{
+        text-align: center;
+        width: 70%;
+   }
+    .container-two .text{
+        text-align: center;
+        width: 70%;
+   }
+   .container-one .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+   .container-two .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+  .img img{
+    width: 400px;
+}
+   
+}
+
+@media screen and (max-width:600px){
+    nav{
+        width: 65%;
+        margin: auto;
+        margin-top: .4rem;
+    }
+    
+    .container-one .text{
+        text-align: center;
+      
+        width: 79%;
+   }
+    .container-two .text{
+        text-align: center;
+      
+        width: 79%;
+   }
+   .container-one .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+   .container-two .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+  .img img{
+    width: 380px;
+}
+}
+
+@media screen and (max-width:425px) {
+    nav{
+        width: 75%;
+        margin: auto;
+        margin-top: .4rem;
+    }
+ 
+    .container-one .text{
+        text-align: center;
+        width: 79%;
+   }
+    .container-two .text{
+        text-align: center;
+        width: 79%;
+   }
+   .text h2{
+    font-size: 2rem;
+}
+.text p{
+    font-size: 1rem;
+    font-weight: 550;
+}
+   .container-one .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+   .container-two .img{
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+  .img img{
+    width: 350px;
+}
+}
+
+@media screen and (max-width:375px){
+   nav{
+    width: 90%;
+   }
+   
+    nav h1{
+         font-size: 1;
+        } 
+   
+    .text h2{
+        font-size: 1.8rem;
+    }
+    .text p{
+        font-size: .8rem;
+        font-weight: 550;
+    }
+    
+    .img img{
+        width: 300px;
+     }
+}

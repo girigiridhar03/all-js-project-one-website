@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/weather-app.css">
+    <script src="../javascript/weather-app.js" defer></script>
+    <script src="https://kit.fontawesome.com/b9c11e8535.js" defer crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+      <div class="weather-app">
+            <form>
+                <input type="text" id="txt-area" placeholder="Enter the City Name">
+                <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            
+            <p class="error">Invalid</p>
+
+       <div class="weather-details">
+
+           <img src="../images/weather-images/rain.png" class="weather-img">
+          
+          
+           <div class="temp-name">
+                <h2 class="temp">31°C</h2>
+                <h3 class="city-name">Goa</h3>
+           </div>
+                 
+           <div class="flex">
+                <div class="humidity">
+                    <img src="../images/weather-images/humidity.png">
+                    <div class="txt">
+                        <p class="hum">37%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="../images/weather-images/wind.png">
+                    <div class="txt">
+                        <p class="speed">4.1km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+      
+      
+               </div>
+       </div>
+      </div>
+
+  </div>
+</body>
+</html>

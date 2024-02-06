@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body{
+    height: 100vh;
+  
+}
+.container{
+    width: 30%;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+   
+}
+.weather-app{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(192, 231, 246);
+    box-shadow: 5px 5px 12px;
+}
+
+.error{
+    margin: 1rem;
+    font-size: 1.9rem;
+    color: red;
+    font-weight: 600;
+    display: none;
+}
+form{
+    width: 100%;
+}
+#txt-area{
+    width: 85%;
+    padding: 1rem;
+    
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-transform: lowercase;
+}
+.weather-details{
+    display: none;
+}
+#search-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-left: .5rem;
+    font-weight: 550;
+    background-color: white;
+    cursor: pointer;
+   
+}
+
+#search-btn i{
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+.temp-name h2{
+    font-size: 2.2rem;
+}
+.temp-name h3{
+    font-size: 1.7rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.humidity , .wind p{
+     font-size: 1rem;
+     font-weight: bold;
+}
+
+@media screen and (max-width:1440px){
+     .container{
+        width: 50%;
+     }
+}
+
+@media screen and (max-width:1440px){
+    .container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+     .container{
+        width: 80%;
+     }
+}
+
+
+@media screen and (max-width:600px){
+    .container{
+        width: 90%;
+    }
+    #txt-area{
+        width: 80%;
+    }
+    .temp-name h2{
+        font-size: 2rem;
+    }
+    .temp-name h3{
+        font-size: 1.5rem;
+    }
+    .humidity img{
+       width: 50px;
+    }
+    .wind img{
+        width: 50px;
+     }
+
+     .humidity , .wind p{
+        font-size: .8rem;
+     }
+}
+@media screen and (max-width:425px) {
+    #txt-area{
+        width: 78%;
+    }
+    .weather-img{
+        width: 180px;
+    }
+    #txt-area{
+        font-size: .9rem;
+    }
+    .temp-name h2{
+        font-size: 1.5rem;
+    }
+    .temp-name h3{
+        font-size: 1.3rem;
+    }
+    .humidity , .wind{
+        gap: .5rem;
+   }
+   .humidity img{
+       width: 50px;
+    }
+    .wind img{
+        width: 50px;
+     }
+
+
+     .humidity , .wind p{
+        font-size: .9rem;
+     }
+}
+
+@media screen and (max-width:375px){
+    #txt-area{
+        width: 75%;
+     }
+     .weather-img{
+        width: 170px;
+     }
+     #txt-area{
+        font-size: .9rem;
+    }
+     .humidity , .wind{
+        gap: .5rem;
+   }
+   .humidity img{
+       width: 45px;
+    }
+    .wind img{
+        width: 45px;
+     }
+
+     .humidity , .wind p{
+        font-size: .8rem;
+     }
+}
+
+@media screen and (max-width:320px){
+    .container{
+        width: 93%;
+    }
+    #txt-area{
+        font-size: .9rem;
+    }
+    .weather-img{
+        width: 140px;
+    }
+    .humidity , .wind{
+         gap: .5rem;
+    }
+    .humidity img{
+        width: 40px;
+     }
+     .wind img{
+         width: 40px;
+      }
+ 
+      .humidity , .wind p{
+         font-size: .7rem;
+      }
+}
