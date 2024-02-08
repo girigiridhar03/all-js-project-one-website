@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 236, 250);
+}
+.quote-box{
+    width: 50%;
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px;
+}
+
+.quote-box h1{
+    position: relative;
+}
+
+.quote-box h1::before{
+     content: '';
+     width: 4.5rem;
+     height: 5px;
+     background: rgb(24, 179, 240);
+     position: absolute;
+     bottom: -3px;
+     left: 50%;
+     transform: translateX(-50%);
+     border-radius: 4px;
+}
+
+.quotes{
+    margin: 5rem 0;
+    position: relative;
+}
+
+blockquote{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+blockquote::after,blockquote::before{
+     content: '"';
+}
+
+.author-name{
+    margin-top: 2rem;
+    position: absolute;
+    right: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+button{
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    background-color : rgb(24, 179, 240);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+@media screen and (max-width:768px){
+     .quote-box{
+        width: 75%;
+     }
+}
+
+@media screen and (max-width:600px){
+     .quote-box{
+        width: 85%;
+        padding: 1.5rem;
+     }
+     h1{
+        font-size: 1.8rem;
+     }
+     blockquote{
+        font-size: 1.3rem;
+     }
+}
+
+@media screen and (max-width:425px){
+     .quote-box{
+        width: 90%;
+     }
+     h1{
+        font-size: 1.8rem;
+     }
+     blockquote{
+        font-size: 1.2rem;
+     }
+     
+}
+@media screen and (max-width:320px){
+     .quote-box{
+        width: 90%;
+        padding: 1rem;
+     }
+     h1{
+        font-size: 1.5rem;
+     }
+     blockquote{
+        font-size: 1rem;
+     }
+     .author-name{
+        font-size: 1rem;
+     }
+     
+}

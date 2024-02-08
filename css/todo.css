@@ -8,3 +8,213 @@
     color: black;
 
 }
+
+.container{
+    border: 2px solid palevioletred;
+    width: 50%;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px palevioletred;
+}
+
+.container h1{
+     font-size: 3rem;
+     border-bottom: 5px solid palevioletred;
+     border-radius: 3px;
+     color: palevioletred;
+     padding-bottom: 1rem;
+}
+
+#todo-input{
+     margin: 1.5rem 0;
+     width: 70%;
+     font-size: 1.1rem;
+     padding: .5rem;
+     font-weight: 550;
+     border-radius: 5px;
+     border-color: palevioletred;
+}
+
+#todo-submit{
+     font-size: 1rem;
+     background-color: palevioletred;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     font-weight: bold;
+     color: white;
+     padding: 0.6rem 1rem;
+}
+p{
+    font-weight: 550;
+    color: red;
+    display: none;
+}
+
+.two-containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.first-container ,.second-container{
+    border: 2px solid palevioletred;
+    width: 45%;
+    padding: 2rem;
+    height: 500px;
+    overflow-y: scroll;
+}
+.first-container::-webkit-scrollbar{
+    display: none;
+}
+.second-container::-webkit-scrollbar{
+    display: none;
+}
+
+.first-container , .second-container, h2{
+    color: palevioletred;
+    border-bottom: 5px solid palevioletred;
+    border-radius: 3px;
+    padding-bottom: 1rem;
+}
+
+ul{
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow-x: scroll;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    gap: 1rem;
+
+}
+ul li::-webkit-scrollbar{
+     display: none;
+}
+
+
+.delete{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(244, 86, 86);
+    color: white;
+}
+
+.completed{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(99, 223, 99);
+    color: white;
+}
+
+
+@media screen and (max-width:1440px) {
+    .container{
+        width: 65%;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+    .container{
+        width: 77%;
+    }
+    .first-container,.second-container,h2{
+        font-size: 1.3rem;
+    }
+  
+    ul li{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 90%;
+        padding: 1rem;
+    }
+    .first-container,.second-container,h2{
+        font-size: 1.2rem;
+    }
+    .first-container{
+        width: 48%;
+    }
+    .second-container{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 93%;
+        padding: .5rem;
+    }
+    .first-container,.second-container,h2{
+        font-size: .9rem;
+    }
+    .first-container{
+        padding: .8rem;
+    }
+    .second-container{
+        padding: .8rem;
+    }
+    ul li{
+        font-size: .9rem;
+    }
+     .completed{
+        width: 25px;
+        height: 25px;
+    }
+     .delete{
+        width: 25px;
+        height: 25px;
+    }
+    .two-containers{
+        margin-top: .8rem;
+    }
+    .first-container{
+        height: 300px;
+    }
+    .second-container{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        width: 95%;
+    
+    }
+   .container h1{
+        font-size: 2.4rem;
+    }
+    #todo-input{
+        width: 60%;
+        padding: .5rem;
+        font-size: .8rem;
+    }
+    #todo-submit{
+        padding:  .6rem;
+        font-size: .8rem;
+    }
+    .two-containers{
+        margin-top: .7rem;
+    }
+    .first-container{
+        height: 250px;
+    }
+    .second-container{
+        height: 250px;
+    }
+}

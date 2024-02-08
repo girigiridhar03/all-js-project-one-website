@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: lightblue;
+}
+
+.btns{
+    margin: 5rem;
+}
+
+button{
+    width: 5rem;
+    height: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #413e3e;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+button:hover{
+    transform:  translateY(-5px);
+}
+
+
+.toast{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.text{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-block: 1rem;
+    box-shadow: 5px 5px 15px black;
+    position: relative;
+}
+
+.text i{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1rem;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+  
+}
+.success{
+    color: green;
+}
+.error i{
+    background: red;
+}
+.error{
+    color: red;
+}
+.invalid i{
+    background: orange;
+}
+.invalid{
+    color: orange;
+}
+
+
+.text::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: green;
+    bottom: 0;
+    left: 0;
+    animation: anim 5.5s linear forwards;
+
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
+.invalid::after{
+    background-color: orange;
+}
+.error::after{
+    background-color: red;
+}
